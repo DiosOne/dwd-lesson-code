@@ -1,17 +1,31 @@
+'''match-case Statement '''
 # --- USE: match-case Statement ---
-http_status_code = 404 # Try 200, 500, 999
-status_meaning = ""
+HTTP_STATUS_CODE = 403 # Try 200, 500, 999
+STATUS_MEANING = ""
 
-match http_status_code:
-    case 200:
-        status_meaning = "OK - Request successful."
+match HTTP_STATUS_CODE:
+    case 200|201:
+        STATUS_MEANING = "OK - Request successful."
+    case 301:
+        STATUS_MEANING = "Moved Permanently - Resource has a new URL."
     case 403:
-        status_meaning = "Forbidden - You don't have permission."
+        STATUS_MEANING = "Forbidden - You don't have permission."
     case 404:
-        status_meaning = "Not Found - The resource doesn't exist."
+        STATUS_MEANING = "Not Found - The resource doesn't exist."
     case 500:
-        status_meaning = "Internal Server Error - Something went wrong on our end."
+        STATUS_MEANING = "Internal Server Error - Something went wrong on our end."
+    # case 301:
+    #     status_meaning = "Moved Permanently - Resource has a new URL."
     case _: # Default case
-        status_meaning = "Unknown or unhandled status code."
+        STATUS_MEANING = "Unknown or unhandled status code."
 
-print(f"Status {http_status_code}: {status_meaning}")
+
+print(f"Status {HTTP_STATUS_CODE}: {STATUS_MEANING}")
+
+
+# match-case (3b): Add a new case for http_status_code 301 that sets status_meaning
+# to "Moved Permanently - Resource has a new URL."
+
+# match-case (3b): How could you make case 200 and case 201
+#   (Created) both lead to a similar "Success" message,
+# perhaps by setting a common variable or using |? (e.g., case 200 | 201: status_type = "Success")
