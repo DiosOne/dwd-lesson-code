@@ -1,3 +1,5 @@
+'''_summary_
+    '''
 # Sets
 #
 # Sets are collections of **unique** items, and they are **unordered**
@@ -12,7 +14,7 @@
 numbers = {1, 2, 3, 2, 4, 1} # Duplicates are automatically removed
 print(f"Numbers set: {numbers}")
 
-"""
+
 letters = set("hello world") # Creates a set from a string (unique letters)
 print(f"Unique letters: {letters}")
 
@@ -30,11 +32,11 @@ print(f"Number of unique letters: {len(letters)}")
 # print(letters[0])
 
 
-# --- MODIFY ---
+# # # --- MODIFY ---
 
 print(f"Original numbers set: {numbers}")
 
-# Add an element
+# # Add an element
 numbers.add(5)
 print(f"Added 5: {numbers}")
 numbers.add(3) # Adding existing element does nothing
@@ -56,5 +58,3 @@ print(f"Intersection (A & B): {set_a & set_b} or {set_a.intersection(set_b)}")
 print(f"Difference (A - B): {set_a - set_b} or {set_a.difference(set_b)}")
 print(f"Difference (B - A): {set_b - set_a}")
 print(f"Symmetric Difference (A ^ B): {set_a ^ set_b}") # Items in A or B, but not both
-
-"""
