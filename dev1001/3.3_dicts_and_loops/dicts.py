@@ -14,7 +14,7 @@ product_prices = {
     'usb_c_hub': 30,
     'ergonomic_keyboard': 75
 }
-print (f"Price is: product_prices['laptop_stand']")
+print (f"Price is: ${product_prices['laptop_stand']}")
 
 # # Accessing an item's quantity
 # item_to_check = "usb_c_hub"
@@ -24,9 +24,9 @@ print (f"Price is: product_prices['laptop_stand']")
 #     print(f"{item_to_check} not found in inventory.")
 
 # # Using .get() to safely access (avoids KeyError)
-# item_to_check_safe = "monitor_arm"
-# quantity_safe = inventory.get(item_to_check_safe, 0) # Default to 0 if not found
-# print(f"Quantity of {item_to_check_safe} (using .get()): {quantity_safe}")
+item_to_check_safe = "monitor_arm"
+quantity_safe = inventory.get(item_to_check_safe, 0) # Default to 0 if not found
+print(f"Quantity of {item_to_check_safe} (using .get()): {quantity_safe}")
 
 # # Adding a new item
 # inventory["ergonomic_keyboard"] = 15
