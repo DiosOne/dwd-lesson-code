@@ -20,8 +20,7 @@ store= {
     'Stock':inventory,
     'Prices':product_prices
 }
-print(f'{list(store)}')
-# print(store)
+
 print()
 print("Inventory:")
 for item, quantity in inventory.items():
@@ -30,8 +29,9 @@ for item, quantity in inventory.items():
 print("\nProduct Prices:")
 for item, price in product_prices.items():
     print(f"{item}: ${price}")
-
-# print(f"{list(product_prices.keys())[0].replace('_', ' ').title()} Price is: ${product_prices['laptop_stand']}")
+    
+# print(f'{(store['Prices'])}')
+print(f"\n{list(product_prices.keys())[0].replace('_', ' ').title()} Price is: ${product_prices['laptop_stand']}")
 
 # price_check= 'webcam'
 # in_stock= product_prices.get('webcam', 'Unavailable')
