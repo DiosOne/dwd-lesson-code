@@ -18,8 +18,8 @@ for name, grades in current_students.items():
     avg_grades[name]= avg_grade
     for subject, mark in grades.items():
         print(f'{subject}: {mark}')
-    # identify and print their highest-scoring subject and their lowest-scoring subject
     
+    # identify and print their highest-scoring subject and their lowest-scoring subject
     high_score= max(grades.values())
     low_score= min(grades.values())
     for subject, mark in grades.items():
@@ -36,7 +36,7 @@ print(f'\nJason\'s average: {avg_grades['Jason V']}')
 print(f'\nFreddy\'s average: {avg_grades['Freddy K']}')
 print(f'\nMichael\'s average: {avg_grades['Michael M']}')
 
-# Word Frequency Counter
+# 2.Word Frequency Counter
 # Given a paragraph of text (as a multi-line string), count how many times each word appears.
 # Store the following sample text in a variable
 """
