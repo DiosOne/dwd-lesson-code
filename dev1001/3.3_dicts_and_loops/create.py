@@ -28,7 +28,7 @@ for name, grades in current_students.items():
         if mark==low_score:
             worst_subject=subject
             
-    print(f'\nBest Grade: \n{high_score}. {subject}. \nWorst Grade: \n{low_score}. {subject}')
+    print(f'\nBest Grade: \n{high_score}. {subject}.\n \nWorst Grade: \n{low_score}. {subject}')
     print("." * 20)
     
 # Calculate and print the average grade for one specific student
