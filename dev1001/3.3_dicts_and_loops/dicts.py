@@ -6,15 +6,29 @@ inventory = {
     "usb_c_hub": 35,
     "wireless_mouse": 50,
     'webcam': 25
-    }
+}
+    
 print(f"Initial inventory: {inventory}")
 
 product_prices = {
     'laptop_stand' : 25,
     'usb_c_hub': 30,
-    'ergonomic_keyboard': 75
+    'ergonomic_keyboard': 75,
+    'webcam': 200
 }
-print (f"Price is: ${product_prices['laptop_stand']}")
+print(f"{list(product_prices.keys())[0].replace('_', ' ').title()} Price is: ${product_prices['laptop_stand']}")
+
+price_check= 'webcam'
+in_stock= product_prices.get('webcam', 'Unavailable')
+if price_check in product_prices:
+    # print(f'Price is: ${product_prices['webcam']}')
+    print(f"{list(product_prices.keys())[3].replace('_', ' ').capitalize()} Price is: ${product_prices['webcam']}")
+else:
+    print(f"Price of {price_check} is: {in_stock}")
+    
+# iii.Stock Alert
+
+
 
 # # Accessing an item's quantity
 # item_to_check = "usb_c_hub"
@@ -26,7 +40,7 @@ print (f"Price is: ${product_prices['laptop_stand']}")
 # # Using .get() to safely access (avoids KeyError)
 item_to_check_safe = "monitor_arm"
 quantity_safe = inventory.get(item_to_check_safe, 0) # Default to 0 if not found
-print(f"Quantity of {item_to_check_safe} (using .get()): {quantity_safe}")
+print(f"Quantity of {item_to_check_safe}: {quantity_safe}")
 
 # # Adding a new item
 # inventory["ergonomic_keyboard"] = 15
