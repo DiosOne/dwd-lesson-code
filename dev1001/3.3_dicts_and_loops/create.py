@@ -36,3 +36,16 @@ print(f'\nJason\'s average: {avg_grades['Jason V']}')
 print(f'\nFreddy\'s average: {avg_grades['Freddy K']}')
 print(f'\nMichael\'s average: {avg_grades['Michael M']}')
 
+# Word Frequency Counter
+# Given a paragraph of text (as a multi-line string), count how many times each word appears.
+# Store the following sample text in a variable
+"""
+This is a sample text. This text is for a sample programming exercise.
+The exercise is to count words in this text.
+Ignore case and punctuation for simplicity.
+"""
+
+text_freq= (
+    '''This is a sample text. This text is for a sample programming exercise.
+    The exercise is to count words in this text. Ignore case and punctuation for simplicity.'''
+    )
