@@ -56,8 +56,8 @@ print(f"Inventory after restocking laptop stands: {inventory}")
 #     del inventory["wireless_mouse"]
 #     print(f"Inventory after removing wireless mouse: {inventory}")
 
-# # Getting all keys, values, or items
-# print(f"All product names (keys): {list(inventory.keys())}")
-# print(f"All quantities (values): {list(inventory.values())}")
-# print(f"All inventory entries (items): {list(inventory.items())}")
-# print("-" * 30 + "\n")
+# Getting all keys, values, or items
+print(f"All product names (keys): {list(inventory.keys())}")
+print(f"All quantities (values): {list(inventory.values())}")
+print(f"All inventory entries (items): {list(inventory.items())}")
+print("-" * 30 + "\n")
