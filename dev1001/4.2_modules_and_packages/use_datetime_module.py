@@ -7,6 +7,9 @@ import datetime
 now = datetime.datetime.now()
 print(f"Current date and time: {now}")
 
+now = datetime.time()
+print(f"Current time: {now}")
+
 # Get just the current date
 today = datetime.date.today()
 print(f"Today's date: {today}")
