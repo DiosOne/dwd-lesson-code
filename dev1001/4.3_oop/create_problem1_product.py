@@ -22,6 +22,8 @@ Create a class called `Product`.
 
 4.  Add a method `calculate_total_value(self)` that returns the total value
     of this product currently in stock (price * quantity_in_stock).
+"""
+"""
 
 Instructions:
 - Fill in the `Product` class structure below.

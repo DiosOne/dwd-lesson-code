@@ -21,7 +21,7 @@ with open(file_path, 'r') as f:
     print(f.read(5))
     
     
-    line_by_line (more common for larger files)
+    # line_by_line (more common for larger files)
     print("--- Read line by line ---")
     # f.seek(0) # Reset cursor if you used f.read() above in same block
     first_line = f.readline() # Reads one line

@@ -8,6 +8,7 @@ You already have a basic `Book` class (provided below).
 Your task is to create a `LibraryBook` class that *inherits* from `Book`.
 
 The existing `Book` class:
+"""
 class Book:
     def __init__(self, title, author, pages):
         self.title = title
@@ -17,6 +18,8 @@ class Book:
 
     def display_info(self):
         print(f"Title: {self.title}, Author: {self.author}, Pages: {self.pages}")
+        
+"""        
 
 1.  Create the `LibraryBook` class which inherits from `Book`.
 
